@@ -19,7 +19,7 @@ export default function Dashboard() {
 
   // Fetch the books data from the Spring Boot backend
   useEffect(() => {
-    fetch("http://localhost:8080/api/books")
+    fetch("http://64.226.106.94:8080/api/books")
       .then((response) => response.json())
       .then((data) => {
         setBooks(data);
